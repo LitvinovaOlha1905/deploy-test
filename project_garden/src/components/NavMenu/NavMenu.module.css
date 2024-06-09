@@ -1,0 +1,71 @@
+/* 360px 480px */
+.navMenuContainer {
+  display: none;
+}
+
+/* 768px */
+.navMenu {
+  display: flex;
+  gap: 32px;
+}
+
+.navMenu a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--black);
+}
+
+.item {
+  list-style: none;
+}
+
+.navMenu a:hover{
+  color: var(--green);
+}
+
+.oneDaySaleButton {
+  padding: 6px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 126%;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--txt-white);
+  background-color: var(--green);
+}
+
+.oneDaySaleButton:hover {
+  background-color: var(--black);
+}
+
+/* Night_mode */
+.night_mode>a {
+  color: var(--txt-white);
+}
+
+/* 768px */
+@media screen and (min-width: 768px) {
+  .navMenuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* 1000px */
+@media screen and (min-width: 1000px) {
+  .navMenuContainer {
+    gap: 12px;
+  }
+
+  .navMenu {
+    font-size: 16px;
+    gap: 24px;
+  }
+
+    .navMenu a {
+      font-size: 20px;}
+}
